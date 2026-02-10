@@ -1,0 +1,105 @@
+[Plymouth Theme]
+Name=Archie Urs Relnek
+Description=Archie walking while the system boots up
+ModuleName=two-step
+
+[two-step]
+# ====================
+# RUTAS E IMÁGENES
+# ====================
+ImageDir=/usr/share/plymouth/themes//archie/images
+
+# ====================
+# POSICIONAMIENTO
+# ====================
+# Posición del throbber/animación principal
+HorizontalAlignment=.5
+VerticalAlignment=.7
+
+# Posición del watermark
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.96
+
+# Posición de texto y títulos
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.382
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.382
+
+# Posición de la barras de progreso
+ProgressBarHorizontalAlignment=.5
+ProgressBarVerticalAlignment=.8
+
+# ====================
+# APARIENCIA Y COLORES
+# ====================
+# Fuentes
+Font=Cantarell 12
+TitleFont=Cantarell Light 30
+
+# Colores de fondo (gradiente)
+BackgroundStartColor=0x000000
+BackgroundEndColor=0x000000
+
+# Colores de la barra de progreso
+ProgressBarBackgroundColor=0x606060
+ProgressBarForegroundColor=0xffffff
+
+# ====================
+# ANIMACIÓN Y COMPORTAMIENTO
+# ====================
+# Transiciones
+Transition=fade
+TransitionDuration=0.5
+
+# Comportamiento del diálogo
+DialogClearsFirmwareBackground=true
+MessageBelowAnimation=true
+
+# ====================
+# CONFIGURACIONES ESPECÍFICAS POR MODO
+# ====================
+[boot-up]
+UseFirmwareBackground=true
+UseEndAnimation=true
+
+[shutdown]
+UseFirmwareBackground=true
+UseEndAnimation=false
+
+[reboot]
+UseFirmwareBackground=true
+UseEndAnimation=false
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+UseAnimation=true
+Title=Installing Updates...
+SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+UseAnimation=true
+Title=Upgrading System...
+SubTitle=Do not turn off your computer
+
+[firmware-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+UseAnimation=true
+Title=Upgrading Firmware...
+SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+UseAnimation=true
+Title=Resetting System...
+SubTitle=Do not turn off your computer
+
